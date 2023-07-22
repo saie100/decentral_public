@@ -1,0 +1,224 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family:PlusJakartaSans-Bold;
+  src: url("./assets/fontfamily/PlusJakartaSans-Bold.ttf");
+}
+@font-face {
+  font-family:PlusJakartaSans-Light;
+  src: url("./assets/fontfamily/PlusJakartaSans-Light.ttf");
+}
+@font-face {
+  font-family:PlusJakartaSans-Medium;
+  src: url("./assets/fontfamily/PlusJakartaSans-Medium.ttf");
+}
+@font-face {
+  font-family:PlusJakartaSans-Regular;
+  src: url("./assets/fontfamily/PlusJakartaSans-Regular.ttf");
+}
+@font-face {
+  font-family:PlusJakartaSans-SemiBold;
+  src: url("./assets/fontfamily/PlusJakartaSans-SemiBold.ttf");
+}
+
+/* html{
+  overflow-y: hidden;
+} */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.dashboard{
+  font-family: PlusJakartaSans-Medium, sans-serif;
+  overflow-y: hidden;
+  overflow-x:hidden;
+}
+
+.dashboard #root{
+  overflow-x:hidden;
+  overflow-y: hidden;
+} 
+.dashboard .mainCont{
+  min-height: 100%;
+  max-height: 100%;
+}
+
+@media (max-width: 1168px){
+  /* html{
+    overflow-y: auto !important;
+  } */
+
+  .dashboard {
+    overflow-y: auto !important;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 1249px){
+  /* html{
+    overflow-y: auto !important;
+  } */
+
+  .friends {
+    overflow-y: auto !important;
+  }
+}
+
+.custom-shadow{
+  box-shadow: 0px 18px 40px rgba(112, 144, 176, 0.12);
+}
+
+
+/* Scrollbar Styling */
+.sidebar-scroll::-webkit-scrollbar {
+  width: 5px;
+  height: 5px; 
+}
+
+.sidebar-scroll::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 0px;
+  padding:0 10px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #c2c0c0; 
+
+}
+
+.gradientWhiteBG{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 92.71%);
+  border: none !important;
+}
+
+
+.active{
+  font-weight: bold;
+  color: #0085FF !important;
+}
+
+.apexcharts-toolbar{
+  display: none !important;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
+.oneLineText{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* after 1 line show ... */
+    -webkit-box-orient: vertical;
+}
+
+@media (min-width: 1249px){
+  .friends-scroll{
+    display: block !important;
+  }
+}
+
+.border-color-blue{
+  border-bottom-color: #0085FF !important;
+}
+
+
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1110px;
+}
+}
+.click-img{
+  position: relative;
+}
+.click-img::before{
+background-image: url("./assets/images/Arrow.svg");
+width: 20px;
+height: 23px;
+content: "";
+position: absolute;
+bottom: -15px;
+left: 29px;
+}
+@media only screen and (max-width: 819px) {
+  .click-img::before{
+    background-image: unset;
+ 
+    }
+
+}
+
+.f-f-b{
+  font-family:PlusJakartaSans-Bold;
+}
+.f-f-li{
+  font-family:PlusJakartaSans-Light;
+}
+.f-f-m{
+  font-family:PlusJakartaSans-Medium;
+}
+.f-f-r{
+  font-family:PlusJakartaSans-Regular;
+}
+.f-f-sm{
+  font-family:PlusJakartaSans-SemiBold;
+}
+
+.custom-card-shadow{
+  box-shadow: 0px 18px 40px rgba(0, 133, 255, 0.12);
+}
+
+
+/* slider customization */
+.swiper{
+  overflow: visible !important;
+}
+
+.swiper-pagination{
+  width: 100%;
+  margin: 20px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  gap: 15px;
+}
+
+.swiper-pagination-bullet{
+  display: flex;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #0085FF;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #0085FF;
+}

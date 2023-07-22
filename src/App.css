@@ -1,0 +1,23 @@
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1110px;
+}
+}
+.click-img{
+  position: relative;
+}
+.click-img::before{
+background-image: url("./assets/images/Arrow.svg");
+width: 20px;
+height: 23px;
+content: "";
+position: absolute;
+bottom: -15px;
+left: 29px;
+}
+@media only screen and (max-width: 819px) {
+  .click-img::before{
+    background-image: unset;
+ 
+    }
+}
