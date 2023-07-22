@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./header";
-import Heroslick from "./Heroslick";
 import Instantly from "./Instantly";
 import Suppported from "./Suppported";
 import Supportwallet from "./Supportwallet";
@@ -12,7 +11,6 @@ export default function index() {
   return (
     <div>
       <Header />
-      <Heroslick />
       <Instantly />
       <Suppported />
       <Supportwallet />

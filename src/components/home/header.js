@@ -15,7 +15,6 @@ export default function ButtonAppBar() {
         >
           <Link to="/" className="flex items-center">
             <img src={Logo} className="mr-3 h-6 smL:h-9" alt="Flowbite Logo" />
-            {/* <span className="self-center text-xlLa font-semibold whitespace-nowrap dark:text-white">Flowbite</span> */}
           </Link>
           <div className="flex mdL:order-2" bis_skin_checked="1">
             <button
@@ -30,16 +29,6 @@ export default function ButtonAppBar() {
             >
               <ul className="inline-flex">
                 <li>Get started</li>
-                <li>
-                  {" "}
-                  <img
-                    src={arrowright}
-                    className="ml-3 mt-1"
-                    width="16px"
-                    height="16px"
-                    alt="Flowbite Logo"
-                  />
-                </li>
               </ul>
             </button>
             <button
